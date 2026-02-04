@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Promptonomics",
+  "name": "GreenPrompt ",
   "version": "0.1.0",
   "description": "Analyze and optimize LLM prompts for efficiency and cost.",
   "icons": {
@@ -40,7 +40,7 @@
   ],
 
   "action": {
-    "default_title": "Promptonomics",
+    "default_title": "GreenPrompt ",
     "default_popup": "popup.html"
   },
 

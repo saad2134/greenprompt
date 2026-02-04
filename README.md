@@ -1,4 +1,4 @@
-<h1 align="center"> 🌿 Promptonomics – Make Your AI Prompts Cheaper, Faster, Greener </h1>
+<h1 align="center"> 🌿 GreenPrompt – Make Your AI Prompts Cheaper, Faster, Greener </h1>
 
 > <p align="center"><strong>Analyze, optimize, and track LLM prompt energy usage, cost, and carbon footprint with research-backed recommendations and real-time dashboards. 🎯</strong></p>
 

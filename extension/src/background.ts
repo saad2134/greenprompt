@@ -22,7 +22,7 @@ browser.runtime.onMessage.addListener(
     }
 
     if (message.type === "ANALYZE_PROMPT") {
-      fetch("https://api.promptonomics.dev/analyze", {
+      fetch("https://api.greenprompt.dev/analyze", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
+import { CORE_CONFIG } from "@/config/CORE_CONFIG";
+import { AppProvider } from '@/providers/app-provider'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Promptonomics",
-  description: "soon.",
+  title: `${CORE_CONFIG.appName} ✦ AI Sustainability Platform`,
+  description: "Make every AI prompt count. Analyze, optimize, and track your LLM energy usage to reduce costs and environmental impact.",
 };
 
 export default function RootLayout({
@@ -25,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${outfit.variable} antialiased font-sans`}
       >
-        {children}
+        <AppProvider>
+          {children}
+        </AppProvider>
       </body>
     </html>
   );
