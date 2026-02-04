@@ -10,7 +10,7 @@ Use it to:
 -Inject your UI panel
 -Send messages to background */
 
-const rootId = "promptonomics-root"
+const rootId = "greenprompt -root"
 
 if (!document.getElementById(rootId)) {
   const root = document.createElement("div")

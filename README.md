@@ -1,4 +1,4 @@
-# Promptonomics
+# GreenPrompt 
 
 
 ## Architecture

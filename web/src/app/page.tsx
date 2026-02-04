@@ -1,8 +1,32 @@
+import {
+  Hero,
+  Stats,
+  Problem,
+  Features,
+  FeatureDeepDives,
+  Testimonials,
+  Pricing,
+  CTA,
+} from "@/components/landing";
+
+import Navbar from "@/components/core/navbar";
+import Footer from "@/components/core/footer";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      Coming Soon! Stay tuned!
+    <div className="min-h-screen bg-background text-foreground">
+      <Navbar />
+      <main>
+        <Hero />
+        <Stats />
+        <Problem />
+        <Features />
+        <FeatureDeepDives />
+        <Testimonials />
+        <Pricing />
+        <CTA />
+      </main>
+      <Footer />
     </div>
   );
 }
