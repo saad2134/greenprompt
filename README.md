@@ -412,17 +412,15 @@ flowchart LR
         API[Public API Users<br/>'/api']
     end
 
-    subgraph Backend
-        CORE[Core Service<br/>'/core']
-        DB[DB + Analytics<br/>'/database']
+    subgraph Backend 
+        CORE[Core Service<br/>Docker Instance<br/>'/core'<br/><br/>App Services<br/>+<br/>Database]
+        
     end
 
     %% Internal APIs
     BE <-->|Internal API| CORE
     WEB <-->|Internal API| CORE
     API <-->|Internal API| CORE
-    CORE <-->|Internal API| DB
-
     
 
 

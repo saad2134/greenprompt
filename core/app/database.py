@@ -1,8 +1,10 @@
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker
-from app.config import DATABASE_URL
+import os
 
-engine = create_async_engine(DATABASE_URL, echo=False)
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///./greenprompt.db")
+
+engine = create_async_engine(DATABASE_URL, echo=False, pool_pre_ping=True)
 
 AsyncSessionLocal = sessionmaker(
     bind=engine,

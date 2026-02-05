@@ -1,4 +1,4 @@
-name: Build and Deploy -CORE SERVICE- Docker Image
+name: Build and Deploy CORE SERVICE Docker Image
 
 on:
   push:
@@ -26,9 +26,9 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and push Docker image
+      - name: Build and push CORE SERVICE Docker image
         uses: docker/build-push-action@v5
         with:
           context: ./core
           push: true
-          tags: ghcr.io/<USERNAME>/<REPO>:latest
+          tags: ghcr.io/saad2134/greenprompt:latest
