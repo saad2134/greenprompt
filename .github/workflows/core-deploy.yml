@@ -31,4 +31,4 @@ jobs:
         with:
           context: ./core
           push: true
-          tags: ghcr.io/saad2134/greenprompt:latest
+          tags: ghcr.io/saad2134/greenprompt-core-service:latest
