@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -e 
 
 echo "GreenPrompt Core - Development Setup"
 echo "===================================="
